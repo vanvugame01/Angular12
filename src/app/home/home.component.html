@@ -1,15 +1,17 @@
 <div class="test">
-    <h1>Đây là Componemt Home</h1>
-    <p>Thêm hàng thứ 2 trong Home</p>
-<br/>
-<input type="text" [(ngModel)]="age"/>
-<h2>Tuổi của bạn là: {{age}}</h2>
-<!-- <button (click)="resetName()">Reset tên</button> -->
-<!-- <h3 *ngIf="age > 18">Bạn đã già</h3>
+  <h1>Đây là Componemt Home</h1>
+  <p>Thêm hàng thứ 2 trong Home</p>
+  <br />
+  <!-- <input type="text" [(ngModel)]="age"/>
+<h2>Tuổi của bạn là: {{age}}</h2> -->
+  <!-- <button (click)="resetName()">Reset tên</button> -->
+  <!-- <h3 *ngIf="age > 18">Bạn đã già</h3>
 <h3 *ngIf="age <= 18">Bạn còn trẻ</h3> -->
-<div *ngIf="age <= 18; then tre; else gia"></div>
+  <!-- <div *ngIf="age <= 18; then tre; else gia"></div>
 <ng-template #tre><h2>Bạn còn trẻ</h2></ng-template>
-<ng-template #gia><h2>Bạn đã già</h2></ng-template>
-
+<ng-template #gia><h2>Bạn đã già</h2></ng-template> -->
+  <h2>Trái cây</h2>
+  <div *ngFor="let trai of traiCay; let i = index">
+    <li>{{ i + 1 }}. {{ trai }}</li>
+  </div>
 </div>
-
