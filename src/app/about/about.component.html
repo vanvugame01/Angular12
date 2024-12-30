@@ -1,1 +1,33 @@
 <p>about works!</p>
+<ul [ngSwitch]="loginName">
+  <li *ngSwitchCase="'user'">
+    <p>User is logged in.</p>
+  </li>
+  <li *ngSwitchCase="'admin'">
+    <p>Admin is logged in.</p>
+    <app-home></app-home>
+  </li>
+  <li *ngSwitchDefault><p>Please chose login name</p></li>
+</ul>
+
+<h1>About Angular 12</h1>
+<p>
+  Angular 12 is a platform and framework for building single-page client
+  applications using HTML and TypeScript. It is developed and maintained by
+  Google.
+</p>
+<p>
+  Angular 12 provides a robust set of tools and features for building modern web
+  applications, including:
+</p>
+<ul>
+  <li>Improved performance and smaller bundle sizes</li>
+  <li>Enhanced TypeScript support</li>
+  <li>Better debugging and error handling</li>
+  <li>New features and improvements in the Angular CLI</li>
+  <li>Support for the latest web standards and best practices</li>
+</ul>
+<p>
+  With Angular 12, developers can create high-quality, scalable, and
+  maintainable web applications with ease.
+</p>
